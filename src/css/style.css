@@ -143,7 +143,9 @@
     background-color: #fff;
     margin-bottom: 27px; }
   .material-sect-text {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-top: 25px;
+    padding-top: 13px; }
   .material-sect-text p {
     font-size: 18px;
     font-weight: 700;
@@ -160,6 +162,11 @@
     .material-button img {
       display: inline-block;
       margin-right: 10px; }
+
+.material-block {
+  height: 200px;
+  bafont-size: 2em;
+  text-align: center; }
 
 .material-slider__wrap {
   width: 100%;
@@ -219,9 +226,10 @@
   background-color: #f9f9f9;
   position: relative; }
   .tools-lego {
-    position: absolute;
-    top: -98px;
-    left: 6px; }
+    right: 637px;
+    left: -566px;
+    top: -115px;
+    position: absolute; }
   .tools-button {
     border: 1px solid #23bac1;
     color: #23bac1;
@@ -237,13 +245,19 @@
   .tools-block {
     margin-bottom: 27px; }
   .tools-block_text {
-    font-size: 16p8;
+    font-size: 16px;
     font-weight: 300;
-    margin-bottom: 22px; }
+    margin-bottom: 22px;
+    padding-top: 13px; }
   .tools-block_text p {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 25px; }
+
+.tools-block {
+  height: 200px;
+  bafont-size: 2em;
+  text-align: center; }
 
 .tools-slider__wrap {
   width: 100%;
@@ -274,9 +288,10 @@
   text-align: center;
   position: relative; }
   .model-lego {
-    position: absolute;
-    top: -69px;
-    right: -92px; }
+    right: -637px;
+    left: 566px;
+    top: -115px;
+    position: absolute; }
   .model-block {
     width: 263px;
     height: 210px;
@@ -284,11 +299,12 @@
     .model-block_text {
       font-size: 16px;
       font-weight: 300;
-      margin-bottom: 25px; }
-    .model-block_text p {
-      font-size: 18px;
-      font-weight: 700;
-      margin-top: 25px; }
+      margin-bottom: 25px;
+      padding-top: 13px; }
+      .model-block_text p {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 25px; }
   .model-sect_img {
     max-height: 210px;
     background-color: #fff;
@@ -460,7 +476,19 @@
     .menu-advant__text img {
       margin-right: 16px; }
   .wrapper-nav {
-    margin-bottom: 48px; } }
+    margin-bottom: 48px; }
+  .model-lego {
+    top: -37px;
+    width: 59%; }
+    .model-lego img {
+      width: 305px;
+      height: 200px; }
+  .tools-lego {
+    top: -37px;
+    left: -296px; }
+    .tools-lego img {
+      width: 305px;
+      height: 200px; } }
 
 @media screen and (max-width: 992px) {
   .header-text_tel {
