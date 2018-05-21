@@ -21,30 +21,36 @@
 <body>
 	<section class="main">
 		<div class="container">
-			<header class="header">
-
-				<div class="row align-items-center">
-					<div class="header-logo col-6 col-sm-5 col-md-3 col-lg-3">
+			
+				<div class="row header">
+<!-- 					<header class="header">
+					 -->					
+					 <div class="header-logo col-4 col-md-4 col-lg-4">
 						<img src="img/header/logo.png" alt="logo">
 					</div><!-- /.header-logo -->
-						<div class="col-12 col-sm-8 col-md-3 col-lg-3 header-text_add">
-							<img class="header-icon" src="img/header/metka.svg" alt="gps">
-							г. Москва, <br>
-							Авиамоторная улица, 4А
-						</div><!-- /.header-text_descr -->
-						<div class="col-12 col-sm-4 col-md-3 col-md-offset-1 col-lg-3 header-text_mail">
-							<img class="header-icon" src="img/header/mail.svg" alt="gps">
-							<a href="mailto:info@maketstorent.ru">info@maketstorent.ru</a>
-						</div><!-- /.header-text_descr -->
 
-						<div class="col-6 col-sm-7 col-md-3 col-lg-3 header-text_tel">
-							<a href="tel:+7 (495) 008-55-77">+7 (495) 008-55-77</a>
-							<p class="header-text_col"><a href="#">Заказать макетные запчасти</a>
-							</p>
+					<div class="header-contacts col-8 col-md-8 col-lg-8">
+						<div class="header-text">
+							<div class="header-text_add">
+								<img class="header-icon" src="img/header/metka.svg" alt="gps">
+								г. Москва, <br>
+								Авиамоторная улица, 4А
+							</div><!-- /.header-text_descr -->
+							<div class="header-text_mail">
+								<img class="header-icon" src="img/header/mail.svg" alt="gps">
+								<a href="mailto:info@maketstorent.ru">info@maketstorent.ru</a>
+							</div><!-- /.header-text_descr -->
+							<div class="header-text_tel">
+								<a href="tel:+7 (495) 008-55-77">+7 (495) 008-55-77</a>
+								<p class="header-text_col"><a href="#">Заказать макетные запчасти</a>
+								</p>
 						</div>	<!-- /.header-text_descr -->
+						</div>
+					</div>
+<!-- 					</header>
+			 -->			<!-- /.header -->
 				</div>	<!-- /.row -->
-			</header>
-			<!-- /.header -->
+		
 			<section class="wrapper">
 				<div class="wrapper-nav">
 					<a href="#menu-link" class="menu-link ">
@@ -138,6 +144,30 @@
 		</div><!-- container -->
 	</section>
 	<!-- ///////main /////////-->
+	<div class="overlay">
+		<div class="popup">
+			<div class="popup-title">Форма обратной связи</div>
+				<!-- /.popup-title -->
+			<div class="popup-close"> &times;</div>
+				<!-- /.popup-close -->
+			<div class="popup-form">
+				<form action="mailer/smart.php" method="POST" class="main-form">
+					<div class="popup-form-header">Закажите макетные материалы прямо сейчас<br>
+						<span class="popup-form-header__sub">на производство и поставку изделий</span>
+
+						<label for="phone" class="popup-form__label">Введите ваш номер телефона:</label>
+						<input type="tel" id="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="popup-form__input" name="user_phone" required>
+						<button onclick="yaCounter48833324.reachGoal('topBtn'); return true;" class="button popup-form__btn" type="submit">
+							Оставить заявку!
+						</button>
+						<!-- <div class="popup-form__note">
+							*Минимальный заказ 500шт
+						</div> -->
+					</div>
+				</form>
+			</div>		<!-- /.popup-fprm -->
+		</div>	<!-- /.popup -->
+		</div>	<!-- /.overlay -->
 
 	<section class="material" id="material">
 		<div class="container reviews">
@@ -759,7 +789,6 @@
 			prevArrow: '<div class="slider-model slider-arrow_model slider-model_left"></div>',
 			nextArrow: '<div class="slider-model slider-arrow_model slider-model_right"></div>',
 			responsive: [
-
 			{
 				breakpoint: 1024,
 				settings: {
@@ -778,7 +807,19 @@
 			]
 		});
 	</script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script>
 
+		$(document).ready(function(){
+
+			$('.material-button, .tools-button, .model-button, .ordering-sect a').on("click", function(){
+				$('.overlay').show()
+			});
+			$('.popup-close').on("click", function(){
+				$('.overlay').hide();
+			});
+		});
+	</script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
 	</script>
  <script src="mapbasics.js" type="text/javascript">
