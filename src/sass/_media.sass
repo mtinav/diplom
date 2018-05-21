@@ -1,0 +1,148 @@
+
+@media screen and (max-width: 1199px)
+	.nav-link 
+  padding: 0 20px
+	.menu
+ 	&-block
+ 		text-align: centers
+ 	&-title 
+  	font-size: 24px	
+  	margin-bottom: 20px
+  &-descr
+  	margin-bottom: 55px
+  &-advant__text 
+   margin-bottom: 20px
+   margin-right: 45px
+			& img 
+    margin-right: 16px
+ .wrapper-nav
+ 	margin-bottom: 48px
+
+@media screen and (max-width: 992px)
+	.header-text
+		&_tel 
+  		font-size: 16px
+  		text-align: right
+  &_col
+  	font-size: 11px 	
+  &_mail
+  	padding-left: 73px
+  	& img
+  		padding-left: 53px
+ .menu
+ 	&-block
+ 		text-align: centers
+ 	&-title 
+  	font-size: 24px	
+  	text-align: center
+  &-descr
+  	font-size: 17px
+  	text-align: right
+  &-advant 
+   margin-bottom: 5px
+   width: 107%
+  &-advant__text 
+   margin-bottom: 17px
+   font-size: 13px
+	.form
+		&-menu 
+			width: 315px
+	  height: 415px
+			padding: 15px 18px
+			margin-top: 26px
+			margin-left: 29px
+			&__text
+				margin-bottom: 12px
+			&__input
+				padding-top: 13px
+	   padding-bottom: 13px
+	 &-button
+	 	padding: 14px 42px
+
+	.menu-link.menu-link_active
+		display: none
+	.nav-link 
+  padding: 0 7px
+	.wrapper-nav
+		margin-bottom: 37px
+
+@media screen and (max-width: 768px)
+	.header
+		&-text_add, &-text_mail
+			display: none
+ .menu
+		&-link 
+	  z-index: 20
+	  display: block
+	  width: 30px
+	  height: 30px
+	  border-radius: 45%
+	  position: fixed
+	  top: 20px
+	  right: 51px
+			span, span:before, span:after 
+		  display: block
+		  height: 2px
+		  width: 18px
+		  position: absolute
+		  right: 5%
+		  margin-right: -1px
+		  top: 50%
+		  margin-top: -1px
+		  background-color: #fff
+			span:before 
+	 	 -webkit-transition: all 0.2s
+		  transition: all 0.2s
+		  content: ''
+		  margin-top: -6px
+		  background-color: #fff
+			span:after 
+		  transition: all 0.2s
+		  content: ''
+		  margin-top: 4px
+		  background-color: #fff
+			&_active span
+				right: 5%			  
+				background-color: transparent 
+				&:before           
+					transform: rotate(-45deg)
+				 margin-top: 0
+				 background-color: #fff
+		 	&:after 
+			  transform: rotate(-138deg)
+			  margin-top: 0
+			  background-color: #fff
+
+	.nav-menu 
+		background-color: purple
+		position: fixed	
+		width: 100vw	
+		height: 100vh	
+		z-index: 10	
+		justify-content:	center
+		align-items: center
+		display: flex
+	 right: -100vw 		
+  & li
+	  padding: 0
+	  list-style: none
+	  text-align: center	
+	  & a
+	  	color: #fff  
+	  	line-height: 4
+	  	letter-spacing: 	5px
+	  	font-weight: 100	
+			 &:hover 
+			 	display: block	
+			 	width: 100vw
+				 text-decoration: none
+					background-color: #fff
+
+		
+
+
+
+		
+	
+
+		

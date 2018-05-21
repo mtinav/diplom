@@ -1,0 +1,820 @@
+
+@media screen and (min-width: 1200px)
+
+@media screen and (max-width: 1199px)
+
+@media screen and (max-width: 576px)
+-----------------------------------------
+rhtcnbr	крестик
+.menu
+		&-link 
+	  z-index: 20
+	  display: block
+	  width: 30px
+	  height: 30px
+	  border-radius: 45%
+	  position: fixed
+	  top: 20px
+	  right: 51px
+			span, span:before, span:after 
+		  display: block
+		  height: 2px
+		  width: 18px
+		  position: absolute
+		  right: 5%
+		  margin-right: -1px
+		  top: 50%
+		  margin-top: -1px
+		  background-color: #fff
+			span:before 
+	 	 -webkit-transition: all 0.2s
+		  transition: all 0.2s
+		  content: ''
+		  margin-top: -6px
+		  background-color: #fff
+			span:after 
+		  transition: all 0.2s
+		  content: ''
+		  margin-top: 4px
+		  background-color: #fff
+			&_active span
+				right: 5%			  
+				background-color: transparent 
+				&:before           
+					transform: rotate(-45deg)
+				 margin-top: 0
+				 background-color: #fff
+		 	&:after 
+			  transform: rotate(-138deg)
+			  margin-top: 0
+			  background-color: #fff
+
+	.nav-menu 
+		background-color: purple
+		position: fixed	
+		width: 100vw	
+		height: 100vh	
+		z-index: 10	
+		justify-content:	center
+		align-items: center
+		display: flex
+	 right: -100vw 		
+  & li
+	  padding: 0
+	  list-style: none
+	  text-align: center	
+	  & a
+	  	color: #fff  
+	  	line-height: 4
+	  	letter-spacing: 	5px
+	  	font-weight: 100	
+			 &:hover 
+			 	display: block	
+			 	width: 100vw
+				 text-decoration: none
+					background-color: #fff
+							<script>
+
+		// для загрузки 
+		$('.menu-link').click(function() {
+		 $(this).toggleClass('menu-link_active');
+		 $('.menu').toggleClass('menu_active');
+		});
+
+		$('.menu a').click(function() {
+		 $('.menu').removeClass('menu_active');
+		});
+	</script>
+----------------
+
+@media screen and (max-width: 1199px)
+	.nav-link 
+  padding: 0 20px
+	.menu
+ 	&-title 
+  	font-size: 24px	
+  	margin-bottom: 20px
+  &-descr
+  	margin-bottom: 55px
+  	width: 72%
+  &-advant__text 
+   margin-bottom: 20px
+   margin-right: 45px
+			& img 
+    margin-right: 11px
+ .wrapper-nav
+ 	margin-bottom: 48px
+
+@media screen and (max-width: 992px)
+	.section-title 
+  font-size: 28px
+  margin-bottom: 18px
+	.header-text
+		&_tel 
+  		font-size: 16px
+  		text-align: right
+  &_col
+  	font-size: 11px 	
+  &_mail
+  	padding-left: 73px
+  	& img
+  		padding-left: 53px
+ .menu
+ 	&-title 
+  	font-size: 24px	
+  &-descr
+  	font-size: 17px
+   margin-bottom: 30px
+  &-advant 
+   margin-bottom: 5px
+   width: 107%
+  &-advant__text 
+   margin-bottom: 17px
+   font-size: 13px
+	.form
+		&-menu 
+			width: 315px
+	  height: 415px
+			padding: 15px 18px
+			margin-top: 26px
+			margin-left: 29px
+			&__text
+				margin-bottom: 12px
+			&__input
+				padding-top: 13px
+	   padding-bottom: 13px
+	 &-button
+	 	padding: 14px 42px
+
+	.menu-link.menu-link_active
+		display: none
+	.nav-link 
+  padding: 0 7px
+	.wrapper-nav
+		margin-bottom: 37px
+	.material
+		padding-top: 29px
+	.section-title
+		font-size: 30px
+		margin-bottom: 0
+	.model 
+  padding-bottom: 20px
+
+@media screen and (max-width: 768px)
+	.header
+		&-text_add, &-text_mail
+			display: none
+ .form
+ 	&-menu
+			width: 100%
+			height: 239px
+			margin-left: 0
+			margin-bottom: 40px
+			&__input
+				width: 47%
+			&__comment
+				height: 46px
+		&-button
+			margin-left: 14px
+	.contacts 
+  padding-top: 43px;
+  padding-bottom: 43px
+
+@media screen and (max-width: 507px)
+	.header
+		&-text_col p
+			display: none
+	nav.navbar.fixed-top.navbar-fixed-top.navbar-expand-lg.navbar-dark_bg-dark 
+  display: none
+	.menu
+		padding-left: 10px
+		&-descr 
+   font-size: 16px
+   text-align: left
+   margin-bottom: 30px
+	.form
+		&-menu 
+	  width: 97%
+	  height: 348px
+	  margin-left: 0
+	  &__input
+	  	width: 100%
+	  &__comment
+	  	width: 59%
+	 &-button
+	 	margin-left: 0
+	.section-title
+		font-size: 30px
+		margin-bottom: 0
+	.material-slider__wrap 
+  padding-left: 16%
+  padding-right: 67px
+	.tools-slider__wrap 
+  padding-left: 16%
+  padding-right: 67px
+	.model-slider__wrap 
+  padding-left: 16%
+  padding-right: 67px
+	.slider
+		&-material_left 
+			left: -45px
+			right: -36px
+		&-mat_left 
+   left: -49px
+		&-tools_left 
+			left: -45px			
+			right: -36px	
+		&-model_left 
+  	left: -45px
+  	right: -36px
+
+
+		
+
+
+					-------------------------------------------
+
+<section class="material">
+		<div class="container">
+			<h2 class="section-title">Материалы для макетирования </h2>
+			<!-- /.section-title -->
+			<div class="row align-items-end">
+
+				<div class="col-12 col-md-6 col-lg-3 material-sect">
+					<div class="material-sect_img">
+						<img src="img/material/material-1.png" alt="Инструменты">
+					</div><!-- /.material-sect_img -->
+					<div class="material-sect-text">
+						Пенопласт
+						<p>от 500 руб.</p>
+					</div><!-- /.material-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div>	<!-- /.material-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 material-sect">
+						<img src="img/material/material-2.png" alt="Инструменты">
+					</div><!-- /.material-sect_img -->
+					<div class="material-sect-text">
+						Пенокартон
+						<p>от 100 руб.</p>
+					</div><!-- /.material-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div>	<!-- /.material-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 material-sect">
+					<div class="material-sect_img">
+						<img src="img/material/material-3.png" alt="Инструменты">
+					</div><!-- /.material-sect_img -->
+					<div class="material-sect-text">
+						ПВХ
+						<p>от 350 руб.</p>
+					</div><!-- /.material-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div><!-- /.material-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 material-sect">
+					<div class="material-sect_img">
+						<img src="img/material/material-4.png" alt="Инструменты">
+					</div><!-- /.material-sect_img -->
+					
+					<div class="material-sect-text">
+						Полистирол
+						<p>от 400 руб.</p>
+					</div><!-- /.material-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div><!-- /.tools-block -->
+
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section> 
+	<!-- /.tools -->
+
+
+	<section class="tools">
+		<div class="container">
+			
+			<h2 class="section-title">Инструменты для макетирования</h2>
+			<!-- /.section-title -->
+			<div class="tools-block">
+				<div class="tools-sect">
+					<div class="tools-sect_img">
+						<img src="img/tools/tools-1.png" alt="Инструменты">
+					</div><!-- /.tools-sect_img -->
+					<div class="tools-sect-text">
+						Резак 18 мм
+						<p>от 500 руб.</p>
+					</div><!-- /.tools-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div>	<!-- /.tools-sect -->
+
+				<div class="tools-sect">
+					<div class="tools-sect_img">
+						<img src="img/tools/tools-2.png" alt="Инструменты">
+					</div><!-- /.tools-sect_img -->
+					<div class="tools-sect-text">
+						Реказ 9 мм
+						<p>от 100 руб.</p>
+					</div><!-- /.tools-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div>	<!-- /.tools-sect -->
+
+				<div class="tools-sect">
+					<div class="tools-sect_img">
+						<img src="img/tools/tools-3.png" alt="Инструменты">
+					</div><!-- /.tools-sect_img -->
+					<div class="tools-sect-text">
+						Коврик для резки
+						<p>от 350 руб.</p>
+					</div><!-- /.tools-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div><!-- /.tools-sect -->
+
+				<div class="tools-sect">
+					<div class="tools-sect_img">
+						<img src="img/tools/tools-4.png" alt="Инструменты">
+					</div><!-- /.tools-sect_img -->
+					<div class="tools-sect-text">
+						Линейка
+						<p>от 400 руб.</p>
+					</div><!-- /.tools-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div>	<!-- /.tools-sect -->
+
+			</div><!-- /.tools-block -->
+		</div><!-- /.container -->
+	</section> 
+	<!-- /.tools -->
+
+
+	<section class="layout">
+		<div class="container">
+			<h2 class="section-title">Maкетированиe </h2>
+			<!-- /.section-title -->
+			<div class="row align-items-end">
+
+				<div class="col-12 col-md-6 col-lg-3 layout-sect">
+					<div class="layout-sect_img">
+						<img src="img/material/material-1.png" alt="Инструменты">
+					</div><!-- /.layout-sect_img -->
+					<div class="layout-sect-text">
+						Модели людей маштаб 1:50, 1:87, 1:100, 1:150, 1:200
+						<p>от 500 руб.</p>
+					</div><!-- /.layout-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div>	<!-- /.layout-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 layout-sect">
+					<div class="layout-sect_img">
+						<img src="img/material/material-2.png" alt="Инструменты">
+					</div><!-- /.layout-sect_img -->
+					<div class="layout-sect-text">
+						Модели авто маштаб 1:50, 1:87, 1:100, 1:150, 1:200
+						<p>от 100 руб.</p>
+					</div><!-- /.layout-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div>	<!-- /.layout-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 layout-sect">
+					<div class="layout-sect_img">
+						<img src="img/material/material-3.png" alt="Инструменты">
+					</div><!-- /.layout-sect_img -->
+					<div class="layout-sect-text">
+						Модели деревьев маштаб 1:50, 1:87, 1:100, 1:150, 1:200
+						<p>от 350 руб.</p>
+					</div><!-- /.layout-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+				</div><!-- /.layout-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 layout-sect">
+					<div class="layout-sect_img">
+						<img src="img/material/material-4.png" alt="Инструменты">
+					</div><!-- /.layout-sect_img -->
+					<div class="layout-sect-text">
+						Модели фонарей маштаб 1:50, 1:87, 1:100, 1:150, 1:200
+						<p>от 400 руб.</p>
+					</div><!-- /.layout-sect-text -->
+					<button class="button">
+						Купить
+					</button>
+
+				</div><!-- /.tools-block -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section> 
+	<!-- /.tools -->
+
+	<section class="contacts">
+		<div class="container ">		
+			<h2 class="section-title">Не нашли то что искали?</h2>
+			<!-- /.section-title -->
+			<div class="contacts-text">Оставьте заявку и мы подберем Вам необходимые для Вас материалы</div>
+			<!-- /.contacts-text -->
+			<form action="" class="form-cont">
+				<input class="contacts-input" type="text" placeholder="Ваше имя" required>
+				<input class="contacts-input" type="text" placeholder="Контактный телефон" required>
+				<input class="contacts-input" type="text" placeholder="Какие материалы вам требуется?" required>
+				<button class="button-o">
+					Оставить заявку
+				</button>
+			</form><!-- /.form-cont -->
+			<div class="contacts-text_middle">
+				Нажимая на кнопку оставить заявку вы соглашаетесь с политикой обработки данных 
+			</div>
+			<!-- /.contacts-text_middle -->
+		</section>
+		<!-- /.contacts -->
+	</div>
+	<!-- /////////////.container////////////// -->
+
+
+	<section class="ordering">
+		<div class="container">
+			<h2 class="section-title">Как заказать?  </h2>
+			<!-- /.section-title -->
+			<div class="row">
+
+				<div class="col-12 col-md-6 col-lg-3 ordering-sect">
+					<div class="ordering-sect_img">
+						<img src="img/material/material.png" alt="Инструменты">
+					</div><!-- /.ordering-sect_img -->
+					<div class="ordering-sect-text">
+						<p>Позвонить/оставить запрос <br> на обратный звонок</p>
+					</div><!-- /.ordering-sect-text -->
+					<a href="#">Заполнть форму заказа</a> 
+				</div>	<!-- /.ordering-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 ordering-sect">
+					<div class="ordering-sect_img">
+						<img src="img/material/material.png" alt="Инструменты">
+					</div><!-- /.ordering-sect_img -->
+					<div class="ordering-sect-text">
+						Вам перезвонят<br> наш менеджер и уточнит количество товара 
+					</div><!-- /.ordering-sect-text -->
+					
+				</div>	<!-- /.ordering-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 ordering-sect">
+					<div class="ordering-sect_img">
+						<img src="img/material/material.png" alt="Инструменты">
+					</div><!-- /.ordering-sect_img -->
+					<div class="ordering-sect-text">
+						Согласовать доставку<br> или самовывоз<br>
+					</div><!-- /.ordering-sect-text -->
+					<a href="#">Подробнее о доставке</a>
+				</div><!-- /.ordering-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 ordering-sect">
+					<div class="ordering-sect_img">
+						<img src="img/material/material.png" alt="Инструменты">
+					</div><!-- /.ordering-sect_img -->
+					<div class="ordering-sect-text">
+						Получить товар<br> и приятные эмоций  
+					</div><!-- /.ordering-sect-text -->
+
+				</div><!-- /.tools-block -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section> 
+	<!-- *//////////////.tools ///////////-->
+
+
+	<section class="shipping">
+		<div class="container">
+			<h2 class="section-title">Доставка</h2>
+			<!-- /.section-title -->
+			<div class="row">
+
+				<div class="col-12 col-md-6 col-lg-3 shipping-sect">
+					<div class="shipping-sect_img">
+						<img src="img/material/material.png" alt="Инструменты">
+					</div><!-- /.shipping-sect_img -->
+					<div class="shipping-sect-text">
+						Доставка в пределах МКАД от 3000 руб. <b>бесплатно</b><br>
+						<a href="#">Заполнть форму заказа</a> 
+					</div><!-- /.shipping-sect-text -->
+				</div>	<!-- /.shipping-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 shipping-sect">
+					<div class="shipping-sect_img">
+						<img src="img/material/material.png" alt="Инструменты">
+					</div><!-- /.shipping-sect_img -->
+					<div class="shipping-sect-text">
+						Доставка <b>300 руб.</b> при заказе менее 3000 руб.
+					</div><!-- /.shipping-sect-text -->
+					
+				</div>	<!-- /.shipping-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 shipping-sect">
+					<div class="shipping-sect_img">
+						<img src="img/material/material.png" alt="Инструменты">
+					</div><!-- /.shipping-sect_img -->
+					<div class="shipping-sect-text">
+						<b>Доставка в регионы</b> любой удобной транспортной компаний 
+					</div><!-- /.shipping-sect-text -->
+					<a href="#">Подробнее о доставке</a>
+				</div><!-- /.shipping-sect -->
+
+				<div class="col-12 col-md-6 col-lg-3 shipping-sect">
+					<div class="shipping-sect_img">
+						<img src="img/material/material.png" alt="Инструменты">
+					</div><!-- /.shipping-sect_img -->
+					<div class="shipping-sect-text">
+						<b>Самовывоз:</b><br> Автомоторная 4а стр 21.
+					</div><!-- /.shipping-sect-text -->
+
+				</div><!-- /.tools-block -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section> 
+	<!-- /.tools -->	
+	<!-- //////////////////////////////////////////////////////////// -->
+	<section class="material" id="material">
+		<div class="container">
+			<h1 class="section-title">
+				Материалы для макетирования 
+			</h1>
+			<!-- /.section-title -->
+				<div class="material-slider">
+					<div class="material-slider__item">
+						<img src="img/material/material-1.png" alt="материалы">
+						<div class="material-sect-text align-items-end">
+							Полистирол
+							<p>от 400 руб.</p>
+						</div><!-- /.material-sect-text -->
+						<button class="material-button">
+							Купить
+						</button>
+					</div>
+					<!-- /.material-slider__item -->
+					<div class="material-slider__item">
+						<img src="img/material/material-2.png" alt="материалы">
+						<div class="material-sect-text align-items-end">
+							Пенокартон
+							<p>от 100 руб.</p>
+						</div><!-- /.material-sect-text -->
+						<button class="material-button ">
+							Купить
+						</button>
+					</div>
+					<!-- /.material-slider__item -->
+					<div class="material-slider__item">
+						<img src="img/material/material-3.png" alt="материалы">
+						<div class="material-sect-text align-items-end">
+								ПВХ
+							<p>от 350 руб.</p>
+						</div><!-- /.material-sect-text -->
+						<button class="material-button">
+							Купить
+						</button>
+					</div>
+					<!-- /.material-slider__item -->
+					<div class="material-slider__item">
+						<img src="img/material/material-1.png" alt="материалы">
+						<div class="material-sect-text align-items-end">
+						Полистирол
+							<p>от 400 руб.</p>
+						</div><!-- /.material-sect-text -->
+						<button class="material-button">
+							Купить
+						</button>
+					</div>
+					<!-- /.material-slider__item -->
+					<div class="material-slider__item">
+						<img src="img/material/material-3.png" alt="материалы">
+						<div class="material-sect-text align-items-end">
+							Пенокартон
+							<p>от 750 руб.</p>
+						</div><!-- /.material-sect-text -->
+						<button class="material-button">
+							Купить
+						</button>
+					</div>
+				</div>
+			<!-- /.tools-slider__item -->
+		</div>
+			<!-- /.container -->
+	</section>
+		<!-- /.material -->
+		.material
+	padding-top: 88px
+ padding-bottom: 88px
+ text-align: center
+	&-sect_img
+		max-height: 210px
+  background-color: #fff
+  margin-bottom: 27px
+ &-sect-text 
+ 	font-size: 16px
+ 	padding-top: 25px
+ &-sect-text p
+ 	font-size: 18px
+		font-weight: 700
+		margin-bottom: 24px
+	&-button
+		border: 1px solid #23bac1 
+		color: #23bac1
+		background-color: #fff
+		font-size: 13px
+		font-weight: 700
+		text-transform: uppercase
+		padding: 23px 75px
+		cursor: pointer
+
+.slider
+	&-arrow
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%	
+	&-mat_right
+		right: -48px
+		background: url(../img/arrow_right.png) center no-repeat
+	&-mat_left
+		left: -48px
+		background: url(../img/arrow_left.png) center no-repeat
+--------------
+<script>
+	$('.material-slider').slick({
+						slidesToShow: 4,
+						slidesToScroll: 1,
+						prevArrow: '<div class="slider-feed slider-arrow_material slider-mat_left"></div>',
+						nextArrow: '<div class="slider-feed slider-arrow_material slider-mat_right"></div>',
+						responsive: [
+						{
+							breakpoint: 1024,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2
+							}
+						},
+						{
+							breakpoint: 767,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+						]
+					});
+	</script>
+
+
+	<section class="tools" id="tools">
+		<div class="container">
+			<h1 class="section-title">
+				Материалы для макетирования 
+			</h1>
+			<!-- /.section-title -->
+				<div class="material-slider">
+					<div class="tools-slider__item">
+						<img src="img/tools/tools-1.png" alt="материалы">
+						<div class="tools-sect-text align-items-end">
+							Полистирол
+							<p>от 400 руб.</p>
+						</div><!-- /.tools-sect-text -->
+						<button class="tools-button">
+							Купить
+						</button>
+					</div>
+					<!-- /.tools-slider__item -->
+					<div class="tools-slider__item">
+						<img src="img/tools/tools-2.png" alt="материалы">
+						<div class="tools-sect-text align-items-end">
+							Пенокартон
+							<p>от 100 руб.</p>
+						</div><!-- /.tools-sect-text -->
+						<button class="tools-button ">
+							Купить
+						</button>
+					</div>
+					<!-- /.tools-slider__item -->
+					<div class="tools-slider__item">
+						<img src="img/tools/tools-3.png" alt="материалы">
+						<div class="tools-sect-text align-items-end">
+								ПВХ
+							<p>от 350 руб.</p>
+						</div><!-- /.tools-sect-text -->
+						<button class="tools-button">
+							Купить
+						</button>
+					</div>
+					<!-- /.tools-slider__item -->
+					<div class="tools-slider__item">
+						<img src="img/tools/tools-1.png" alt="материалы">
+						<div class="tools-sect-text align-items-end">
+						Полистирол
+							<p>от 400 руб.</p>
+						</div><!-- /.tools-sect-text -->
+						<button class="tools-button">
+							Купить
+						</button>
+					</div>
+					<!-- /.tools-slider__item -->
+					<div class="tools-slider__item">
+						<img src="img/tools/tools-3.png" alt="материалы">
+						<div class="tools-sect-text align-items-end">
+							Пенокартон
+							<p>от 750 руб.</p>
+						</div><!-- /.tools-sect-text -->
+						<button class="tools-button">
+							Купить
+						</button>
+					</div>
+				</div>
+			<!-- /.tools-slider__item -->
+		</div>
+			<!-- /.container -->
+	</section>
+		<!-- /.tools -->
+
+
+
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [55.756406, 37.714492],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+   
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'images/myIcon.gif',
+            // Размеры метки.
+            iconImageSize: [30, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        })
+        myMap.behaviors.disable([
+	        'scrollZoom'
+	        ]);
+    myMap.geoObjects
+        .add(myPlacemark)
+});
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Примеры. Задание собственного изображения для метки</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="icon_customImage.js" type="text/javascript"></script>
+	<style>
+        html, body, #map {
+            width: 100%; height: 410px; padding: 0; margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
