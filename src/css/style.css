@@ -461,6 +461,26 @@
     top: 37px; }
 
 @media screen and (max-width: 1199px) {
+  h2.section-title {
+    font-size: 30px; }
+  .material {
+    padding-top: 58px;
+    padding-bottom: 58px; }
+    .material-button {
+      font-size: 12px;
+      padding: 15px 50px; }
+  .tools {
+    padding-top: 58px;
+    padding-bottom: 58px; }
+    .tools-button {
+      font-size: 12px;
+      padding: 15px 50px; }
+  .model {
+    padding-top: 58px;
+    padding-bottom: 58px; }
+    .model-button {
+      font-size: 12px;
+      padding: 15px 50px; }
   .nav-link {
     padding: 0 20px; }
   .menu-block {
@@ -477,18 +497,24 @@
       margin-right: 16px; }
   .wrapper-nav {
     margin-bottom: 48px; }
+  .material-lego {
+    right: -437px;
+    left: 466px;
+    top: -101px; }
+    .material-lego img {
+      width: 20%; }
   .model-lego {
-    top: -37px;
-    width: 59%; }
+    right: -429px;
+    left: 453px;
+    top: -101px; }
     .model-lego img {
-      width: 305px;
-      height: 200px; }
+      width: 305px; }
   .tools-lego {
-    top: -37px;
-    left: -296px; }
+    right: 546px;
+    left: -298px;
+    top: -87px; }
     .tools-lego img {
-      width: 305px;
-      height: 200px; } }
+      width: 257px; } }
 
 @media screen and (max-width: 992px) {
   .header-text_tel {
