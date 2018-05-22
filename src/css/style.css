@@ -1018,7 +1018,14 @@
   .slider-mat_left, .slider-tools_left, .slider-model_left {
     left: -21px; }
   .slick-slide img {
-    margin-left: calc(50vw - 0.5 * 300px); } }
+    margin-left: calc(50vw - 0.5 * 300px); }
+  .ordering .section-title {
+    margin-bottom: 35px; }
+  .footer-text {
+    flex-direction: column; }
+    .footer-text_block {
+      text-align: right;
+      padding-right: 15px; } }
 
 body {
   background-color: #fff;
