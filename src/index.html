@@ -125,12 +125,12 @@
 					</div>
 
 					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 form-bg">
-						<form class="form-menu" action="" method="POST">
+						<form class="form-menu" action="mail/mail.php" method="POST">
 								<div class="form-menu__text">
 									Закажите макетные материалы прямо сейчас
 								</div>
 								<input class="form-menu__input" type="text" placeholder="Ваше имя" required>
-								<input class="form-menu__input form-menu_tel" type="tel" name="user_phone" placeholder="Контактный телефон" required>
+								<input class="form-menu__input form-menu_tel" type="tel" name="user_phone" id="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
 								<input class="form-menu__comment" type="textarea" placeholder="Какие материалы вам требуются?" required>
 								<button class="form-button" type="submit" >Оставить заявку</button>
 								<p class="form-menu__middle">Нажимая на кнопку оставить заявку<br>вы соглашаетесь с <a href="obrabotka.html">политикой обработки данных</a>
@@ -150,16 +150,16 @@
 				<!-- /.popup-close -->
 			<div class="popup-form">
 				<form action="mailer/smart.php" method="POST" class="main-form">
-					<div class="popup-form-header">Закажите макетные материалы прямо сейчас<br>
-						<span class="popup-form-header__sub">на производство и поставку изделий</span>
+					<div class="popup-form-header">Закажите макетные материалы прямо сейчас<span class="popup-form-header__sub">на производство и поставку изделий</span>
 						
-						<input class="popup-menu__input" type="text" placeholder="Ваше имя" required>
-						<input class="popup-menu__comment" type="textarea" placeholder="Какие материалы вам требуются?" required>
+						<input class="popup-menu__input" id="name" name="user_name" type="text" placeholder="Ваше имя" required>
+						<input class="popup-menu__comment" id="text" name="user_text" type="textarea" placeholder="Какие материалы вам требуются?" required>
 <!--<label for="phone" class="popup-form__label">Введите ваш номер телефона:</label> -->						
 						<input type="tel" id="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="popup-form__input" name="user_phone" required>
 						<button onclick="yaCounter48833324.reachGoal('topBtn'); return true;" class="button popup-form__btn" type="submit">
 							Оставить заявку
 						</button>
+						<p class="form-menu__middle">Нажимая на кнопку оставить заявку<br>вы соглашаетесь с <a href="obrabotka.html">политикой обработки данных</a>
 						<!-- <div class="popup-form__note">
 							*Минимальный заказ 500шт
 						</div> -->
@@ -699,7 +699,6 @@
 	<!-- /.footer -->
 
 
-
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
 	</script>
 	<script>
@@ -827,9 +826,7 @@
 	</script>
 	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 	<script>
-
 		$(document).ready(function(){
-
 			$('.material-button, .tools-button, .model-button, .ordering-sect a').on("click", function(){
 				$('.overlay').show()
 			});
@@ -838,10 +835,10 @@
 			});
 		});
 	</script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"">
 	</script>
- <script src="mapbasics.js" type="text/javascript">
- </script>
+<!--  <script src="mapbasics.js" type="text/javascript">
+</script> -->
 	<script>
 		ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
@@ -877,7 +874,7 @@
 		});
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js">	</script>
-	
+
 	<script>
 	$(document).ready(function() {
 
@@ -909,8 +906,8 @@
 		});
 	</script> 
 	<script>
-		$(document).ready(function(){
 
+		$(document).ready(function(){
 			$('.header-text_col, .material-button, .tools-button, .modal-button, .ordering-form, .link_bottom h3, .footer-text_col').on("click", function(){
 				$('.overlay').show()
 			});
