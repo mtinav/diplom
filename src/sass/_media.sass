@@ -1,7 +1,31 @@
-
 @media screen and (max-width: 1199px)
-	h2.section-title
-		font-size: 30px
+	.header	
+	&-text
+		display: flex		
+		align-items: center
+	&-text_add 
+		width: 155px
+	&-icon
+		position: absolute
+		left: -1%
+		top: 29%	
+	&-text_mail 
+  width: 225px
+		& img
+			position: absolute
+   left: 283px
+   top: 34%
+	&-text_col a
+		color: #00d1f9
+		text-decoration: underline
+		font-size: 13px
+		font-weight: 300
+	&-text_tel
+		font-size: 18px
+		font-weight: 400
+		& a
+			text-align: right
+
 	.nav-link 
 	 padding: 0 20px
 	.menu
@@ -28,8 +52,6 @@
 	.wrapper-nav
 		margin-bottom: 48px
 		
-
-
 	.material 
 	 padding-top: 58px
 	 padding-bottom: 58px
@@ -66,6 +88,8 @@
 	 top: -87px
 		& img 
 	  width: 257px
+	.footer-mail
+		display: none
 
 @media screen and (max-width: 992px)
 	.header-text
@@ -116,7 +140,12 @@
    font-size: 15px 
  .popup-form__label label
    font-size: 15px
-
+	
+	.section-title
+		font-size: 25px
+		margin-bottom: 20px
+		&::after
+			display: none
 
 	.menu-link.menu-link_active
 		display: none
@@ -130,6 +159,8 @@
   padding: 0 7px
 	.wrapper-nav
 		margin-bottom: 37px
+	.footer-mail
+		display: none
 
 @media screen and (max-width: 768px)
 	.header
@@ -233,8 +264,117 @@
  .popup-title 
    font-size: 17px
  
+@media screen and (max-width: 375px)
+ .header
+ 	margin-bottom: 15px
+	 &-text_tel
+		 margin-top: 35px
+	.menu
+		padding-bottom: 20px
+		&-link
+			margin-right: 10px
+		&-title span
+			display: block 
+		&-descr
+			text-align: center
+		&-advant
+			margin-left: 20px
+			&_indent
+				padding-left: 7px
+	.wrapper-nav
+		display: none
+	.form-menu
+		display: none
+	.material
+		padding-top: 25px
+		padding-bottom: 35px
+		&-block
+			height: 155px
+	.slider-mat, .slider-tools, .slider-model
+		&_right 
+ 	 right: -27px
+ 	&_left 
+   left: -23px
 
-		
-	
+	.tools
+		padding-top: 25px
+		padding-bottom: 35px
 
-		
+	.model
+		padding-top: 25px
+		padding-bottom: 0
+
+	.contacts 
+  padding-top: 35px
+  padding-bottom: 40px
+		& .section-title 
+   margin-bottom: 25px
+  &-text 
+   font-size: 18px
+   font-weight: 500
+   margin-bottom: 35px
+   &_middle a
+				color: #7c7c7c
+   	text-decoration: underline
+  &-input
+  	margin-right: 0
+  	margin-bottom: 5px
+  	&_comment 
+    margin-bottom: 15px
+  &-button
+  	margin-bottom: 15px
+
+	.ordering
+		padding-top: 35px
+		padding-bottom: 0
+		& h2 
+			margin-bottom: 45px
+		&-sect
+   margin-bottom: 50px
+			&_img
+		 	margin-bottom: 12px 
+				&	img 
+   		width: 24%
+  	&-text 
+   	margin-bottom: 10px
+
+	.shipping
+		padding-top: 35px
+		padding-bottom: 18px
+		& .section-title 
+   margin-bottom: 45px
+		&-sect
+			&-text span
+				display: block
+				font-weight: bold
+			&_img 
+    margin-bottom: 12px
+    &.ship img
+    	padding-top: 15px
+    	margin-bottom: 0
+
+	.link
+		padding-top: 35px
+		padding-bottom: 0
+		&-block
+			padding-bottom: 40px 
+			&img 
+   	margin-bottom: 14px
+  &_bottom 
+  	padding-top: 35px
+   padding-bottom: 40px
+   & h3
+   	font-size: 17px
+   & a
+   	font-size: 16px
+
+	.footer
+		&-block
+			display: flex
+			align-items: center
+			text-align: right
+		&_img
+			display: none
+			&_text
+				flex-direction: column
+

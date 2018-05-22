@@ -22,19 +22,25 @@
 	font-size: 13px
 	display: flex
 	align-items: center		
-	&-text
+	&-contacts
 		display: flex
+		justify-content: flex-end
+	&-text
+		display: flex		
 		align-items: center
+
 	&-text_add 
-		margin-right: 169px
-  margin-left: 43px
+		margin-right: 235px
 	&-icon
 		position: absolute
-		left: 2%
-		top: 29%
-	&-text_mail img
+		left: -2%
+		top: 29%	
+	&-text_mail 
+  max-width: 272px
+  width: 272px
+		& img
 			position: absolute
-   left: 324px
+   left: 350px
    top: 34%
 	&-text_col a
 		color: #00d1f9
@@ -44,9 +50,21 @@
 	&-text_tel
 		font-size: 18px
 		font-weight: 400
-	&-text_mail 
-  margin-right: 100px
+		& a
+			text-align: right
 
+.section-title 
+	text-align: center
+	font-size: 36px
+	font-weight: 400
+	margin-bottom: 107px
+	&::after
+		content: ''
+		display: block
+		height: 6px
+		background: url(../img/lain.png) center no-repeat
+		margin-top: 18px
+		
 .wrapper-nav
 	border-top: 1px solid #424242
  border-bottom: 1px solid #424242
