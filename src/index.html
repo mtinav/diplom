@@ -33,7 +33,7 @@
 						<div class="header-text">
 							<div class="header-text_add">
 								<img class="header-icon" src="img/header/metka.svg" alt="gps">
-									г.Москва,<span class="header-icon_span">Авиамоторная улица, 4А</span>
+									г.Москва,<br><span class="header-icon_span">Авиамоторная улица, 4А</span>
 							</div><!-- /.header-text_descr -->
 							<div class="header-text_mail">
 								<img class="header-icon" src="img/header/mail.svg" alt="gps">
@@ -154,20 +154,16 @@
 						
 						<input class="popup-menu__input" id="name" name="user_name" type="text" placeholder="Ваше имя" required>
 						<input class="popup-menu__comment" id="text" name="user_text" type="textarea" placeholder="Какие материалы вам требуются?" required>
-<!--<label for="phone" class="popup-form__label">Введите ваш номер телефона:</label> -->						
 						<input type="tel" id="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="popup-form__input" name="user_phone" required>
 						<button onclick="yaCounter48833324.reachGoal('topBtn'); return true;" class="button popup-form__btn" type="submit">
 							Оставить заявку
 						</button>
 						<p class="form-menu__middle">Нажимая на кнопку оставить заявку<br>вы соглашаетесь с <a href="obrabotka.html">политикой обработки данных</a>
-						<!-- <div class="popup-form__note">
-							*Минимальный заказ 500шт
-						</div> -->
 					</div>
 				</form>
 			</div>		<!-- /.popup-fprm -->
 		</div>	<!-- /.popup -->
-		</div>	<!-- /.overlay -->
+	</div>	<!-- /.overlay -->
 
 	<section class="material" id="material">
 		<div class="container reviews">
@@ -523,10 +519,10 @@
 			<div class="contacts-text">Оставьте заявку и мы подберем Вам необходимые для Вас материалы</div>
 			<!-- /.contacts-text -->
 			<form action="#" class="form-cont">
-				<input class="contacts-input contacts-input_name" name="name" type="text" placeholder="Ваше имя" >
-				<input class="contacts-input contacts-input_tel" type="text" placeholder="Контактный телефон" required>
-				<input class="contacts-input contacts-input_comment" type="text" placeholder="Какие материалы вам требуется?" required>
-				<button class="contacts-button">
+				<input class="contacts-input contacts-input_name" id="name" name="user_name" type="text" placeholder="Ваше имя" required>
+				<input class="contacts-input contacts-input_tel" id="phone"	name="user_phone"	type="text" placeholder="Контактный телефон" required>
+				<input class="contacts-input contacts-input_comment" id="text" name="user_text" type="text" placeholder="Какие материалы вам требуется?" required>
+				<button class="contacts-button" type="submit">
 					Оставить заявку
 				</button>
 			</form><!-- /.form-cont -->
