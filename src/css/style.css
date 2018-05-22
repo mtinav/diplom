@@ -249,9 +249,9 @@
   text-align: center;
   position: relative; }
   .material-lego {
-    right: 13px;
-    top: -146px;
-    width: 238px;
+    right: 2px;
+    top: -142px;
+    width: 268px;
     position: absolute; }
   .material-block {
     width: 263px;
@@ -407,9 +407,9 @@
   text-align: center;
   position: relative; }
   .model-lego {
-    right: 69px;
+    right: 258px;
     top: -67px;
-    width: 238px;
+    width: 96px;
     position: absolute; }
   .model-block {
     width: 263px;
@@ -613,33 +613,24 @@
       text-align: right; }
 
 @media screen and (max-width: 1199px) {
-  -text {
+  .header-text {
     display: flex;
     align-items: center; }
-  -text_add {
-    width: 155px; }
-  -icon {
-    position: absolute;
-    left: -1%;
+  .header-text_add {
+    width: 57px; }
+  .header-icon {
+    left: 6%;
     top: 29%; }
-  -text_mail {
-    width: 225px; }
-    -text_mail img {
-      position: absolute;
+  .header-text_mail {
+    width: 217px;
+    font-weight: 400; }
+    .header-text_mail img {
       left: 283px;
       top: 34%; }
-  -text_col a {
-    color: #00d1f9;
-    text-decoration: underline;
-    font-size: 13px;
-    font-weight: 300; }
-  -text_tel {
-    font-size: 18px;
-    font-weight: 400; }
-    -text_tel a {
+    .header-text_mail a {
       text-align: right; }
   .nav-link {
-    padding: 0 20px; }
+    padding: 0 16px; }
   .menu-block {
     text-align: centers; }
   .menu-title {
@@ -667,35 +658,38 @@
     .material-button {
       font-size: 12px;
       padding: 15px 50px; }
+    .material-lego {
+      right: -37px;
+      top: -118px; }
+      .material-lego img {
+        width: 189px; }
   .tools {
     padding-top: 58px;
     padding-bottom: 58px; }
     .tools-button {
       font-size: 12px;
       padding: 15px 50px; }
+    .tools-lego {
+      right: 546px;
+      left: -298px;
+      top: -87px; }
+      .tools-lego img {
+        width: 257px; }
   .model {
     padding-top: 58px;
     padding-bottom: 58px; }
     .model-button {
       font-size: 12px;
       padding: 15px 50px; }
-  .material-lego {
-    left: 835px;
-    top: -127px;
-    width: 257px; }
-  .model-lego {
-    right: -385px;
-    left: 434px;
-    top: -42px;
-    width: 257px; }
-    .model-lego img {
-      width: 277px; }
-  .tools-lego {
-    right: 546px;
-    left: -298px;
-    top: -87px; }
-    .tools-lego img {
-      width: 257px; }
+    .model-lego {
+      right: 58px;
+      top: -42px;
+      width: 227px; }
+      .model-lego img {
+        width: 277px; }
+  .contacts-button {
+    margin-bottom: 25px;
+    margin-right: 19px; }
   .footer-mail {
     display: none; } }
 
@@ -777,10 +771,11 @@
   .nav-link {
     padding: 0 7px; }
   .wrapper-nav {
-    margin-bottom: 37px;
+    margin-bottom: 37px; }
+  .material {
     padding-top: 25px;
     padding-bottom: 35px; }
-    .wrapper-nav-block {
+    .material-block {
       height: 155px; }
   .slider-mat_right, .slider-tools_right, .slider-model_right {
     right: -27px; }
