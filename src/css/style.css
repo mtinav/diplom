@@ -249,9 +249,9 @@
   text-align: center;
   position: relative; }
   .material-lego {
-    right: -637px;
-    left: 566px;
-    top: -115px;
+    right: 13px;
+    top: -146px;
+    width: 238px;
     position: absolute; }
   .material-block {
     width: 263px;
@@ -407,12 +407,10 @@
   text-align: center;
   position: relative; }
   .model-lego {
-    right: -624px;
-    left: 487px;
-    top: -74px;
+    right: 69px;
+    top: -67px;
+    width: 238px;
     position: absolute; }
-    .model-lego img {
-      width: 390px; }
   .model-block {
     width: 263px;
     height: 210px;
@@ -682,17 +680,16 @@
       font-size: 12px;
       padding: 15px 50px; }
   .material-lego {
-    right: -437px;
-    left: 466px;
-    top: -101px; }
-    .material-lego img {
-      width: 20%; }
+    left: 835px;
+    top: -127px;
+    width: 257px; }
   .model-lego {
-    right: -413px;
+    right: -385px;
     left: 434px;
-    top: -55px; }
+    top: -42px;
+    width: 257px; }
     .model-lego img {
-      width: 297px; }
+      width: 277px; }
   .tools-lego {
     right: 546px;
     left: -298px;
