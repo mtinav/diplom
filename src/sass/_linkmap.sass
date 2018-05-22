@@ -39,25 +39,49 @@
 		line-height: 20px
 		color: #00d0f9
 
-.footer
-	background-color: #191919
-	padding-top: 20px	
-	padding-bottom: 28px	
-	color: #ffffff
+.footer	
+	background-color: #000
+	color: #fff
+	font-family: "Myriad Pro"
+	padding-top: 21px	
+	padding-bottom: 22px
+	font-weight: 400		
 	font-size: 13px
-	font-weight: 400
-	&-block
-		&_mail 
-			padding-top: 35px
-			& a
-				text-decoration: underline
-		&_add 
-			padding-top: 32px
-		&_img
+	display: flex
+	align-items: center		
+	&-contacts
+		display: flex
+	&-text
+		display: flex		
+		align-items: center		
+		justify-content: flex-end
+	&-text_add 
+		margin-right: 122px
+	&-icon
+		position: absolute
+		left: 13%
+		top: 38%	
+		& span
+			display: block
+	&-text_mail 
+  max-width: 272px
+  width: 272px
+  text-decoration: underline
+		& img
 			position: absolute
-   left: -6%
-   top: 37px
-
+   left: 372px
+   top: 41%
+	&-text_col a
+		color: #00d1f9
+		text-decoration: underline
+		font-size: 13px
+		font-weight: 300
+	&-text_tel
+		font-size: 18px
+		font-weight: 400
+		text-align: right
+		& a
+			text-align: right
 		
 
 

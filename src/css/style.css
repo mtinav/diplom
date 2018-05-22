@@ -5,6 +5,7 @@
 
 .main {
   color: #fff;
+  padding-bottom: 44px;
   position: relative;
   background: url(../img/main/main-bgc-1.jpg) center no-repeat;
   background-size: cover;
@@ -34,20 +35,21 @@
     display: flex;
     align-items: center; }
   .header-text_add {
-    margin-right: 235px; }
+    margin-right: 192px; }
   .header-icon {
     position: absolute;
-    left: -2%;
+    left: 5%;
     top: 29%; }
     .header-icon span {
       display: block; }
   .header-text_mail {
     max-width: 272px;
-    width: 272px; }
+    width: 272px;
+    text-decoration: underline; }
     .header-text_mail img {
       position: absolute;
-      left: 350px;
-      top: 34%; }
+      left: 372px;
+      top: 38%; }
   .header-text_col a {
     color: #00d1f9;
     text-decoration: underline;
@@ -55,7 +57,8 @@
     font-weight: 300; }
   .header-text_tel {
     font-size: 18px;
-    font-weight: 400; }
+    font-weight: 400;
+    text-align: right; }
     .header-text_tel a {
       text-align: right; }
 
@@ -77,11 +80,12 @@
   max-width: 1140px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 85px;
+  margin-bottom: 90px;
   list-style-type: none; }
 
 .nav-link {
-  padding: 0 35px; }
+  padding: 0 30px;
+  text-transform: uppercase; }
 
 .menu {
   color: #fffafa; }
@@ -119,8 +123,10 @@
   .form-menu__middle {
     color: #7c7c7c;
     font-size: 11px;
-    font-weight: 300;
-    text-decoration: underline; }
+    font-weight: 300; }
+    .form-menu__middle a {
+      color: #7c7c7c;
+      text-decoration: underline; }
   .form-menu__text {
     font-size: 18px;
     font-weight: 400;
@@ -146,11 +152,13 @@
 .form-button {
   box-shadow: 0 6px 18px rgba(28, 167, 173, 0.32);
   background-color: #23bac1;
-  padding: 20px 38px;
+  padding: 18px 38px;
   color: #fff;
-  max-width: 200px;
+  max-width: 204px;
   width: 100%;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 13px; }
 
 .col-12.col-xl-4 {
   padding: 0; }
@@ -399,10 +407,12 @@
   text-align: center;
   position: relative; }
   .model-lego {
-    right: -536px;
-    left: 512px;
-    top: -115px;
+    right: -624px;
+    left: 487px;
+    top: -74px;
     position: absolute; }
+    .model-lego img {
+      width: 390px; }
   .model-block {
     width: 263px;
     height: 210px;
@@ -466,23 +476,27 @@
     margin-bottom: 50px; }
   .contacts-text {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 70px; }
     .contacts-text_middle {
       color: #7c7c7c;
       font-size: 12px; }
+      .contacts-text_middle a {
+        color: #7c7c7c;
+        text-decoration: underline; }
   .contacts-input {
     width: 263px;
     height: 50px;
     border: 1px solid #cbc8c8;
-    margin-right: 25px;
+    margin-right: 14px;
     text-align: center;
     margin-bottom: 24px; }
   .contacts-button {
-    padding: 16px 78px;
+    padding: 16px 67px;
     background-color: #23bac1;
     color: #fff;
-    box-shadow: 0 6px 18px rgba(28, 167, 173, 0.32); }
+    box-shadow: 0 6px 18px rgba(28, 167, 173, 0.32);
+    text-transform: uppercase; }
 
 .ordering {
   background: url("../img/order/order-black.jpg") center no-repeat;
@@ -505,6 +519,8 @@
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center; }
+  .shipping-sect span {
+    font-weight: bold; }
   .shipping-sect_img {
     margin-bottom: 34px; }
   .shipping-sect-text {
@@ -555,22 +571,48 @@
     color: #00d0f9; }
 
 .footer {
-  background-color: #191919;
-  padding-top: 20px;
-  padding-bottom: 28px;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
+  font-family: "Myriad Pro";
+  padding-top: 21px;
+  padding-bottom: 22px;
+  font-weight: 400;
   font-size: 13px;
-  font-weight: 400; }
-  .footer-block_mail {
-    padding-top: 35px; }
-    .footer-block_mail a {
-      text-decoration: underline; }
-  .footer-block_add {
-    padding-top: 32px; }
-  .footer-block_img {
+  display: flex;
+  align-items: center; }
+  .footer-contacts {
+    display: flex; }
+  .footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .footer-text_add {
+    margin-right: 122px; }
+  .footer-icon {
     position: absolute;
-    left: -6%;
-    top: 37px; }
+    left: 13%;
+    top: 38%; }
+    .footer-icon span {
+      display: block; }
+  .footer-text_mail {
+    max-width: 272px;
+    width: 272px;
+    text-decoration: underline; }
+    .footer-text_mail img {
+      position: absolute;
+      left: 372px;
+      top: 41%; }
+  .footer-text_col a {
+    color: #00d1f9;
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 300; }
+  .footer-text_tel {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right; }
+    .footer-text_tel a {
+      text-align: right; }
 
 @media screen and (max-width: 1199px) {
   -text {
@@ -646,11 +688,11 @@
     .material-lego img {
       width: 20%; }
   .model-lego {
-    right: -429px;
-    left: 453px;
-    top: -101px; }
+    right: -413px;
+    left: 434px;
+    top: -55px; }
     .model-lego img {
-      width: 305px; }
+      width: 297px; }
   .tools-lego {
     right: 546px;
     left: -298px;
