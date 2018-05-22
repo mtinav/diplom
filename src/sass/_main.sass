@@ -33,7 +33,7 @@
 		margin-right: 192px
 	&-icon
 		position: absolute
-		left: 5%
+		left: -1%
 		top: 29%	
 		& span
 			display: block
@@ -133,6 +133,7 @@
 			margin-bottom: 10px
 			border: 1px solid #e8e8e8
 			text-align: center
+			outline: none
 		&__comment
 			padding-top: 18px
 			padding-bottom: 18px
@@ -142,6 +143,7 @@
    margin-bottom: 20px
    border: 1px solid #e8e8e8
    text-align: center
+   outline: none
  &-button
  	box-shadow: 0 6px 18px rgba(28, 167, 173, 0.32)
 		background-color: #23bac1
@@ -152,12 +154,12 @@
 		margin-bottom: 15px
 		text-transform: uppercase
 		font-size: 13px
+		outline: none
 .col-12.col-xl-4 
  padding: 0
 
 //popup
 .overlay .popup 
-	display: none
  position: fixed
  left: 50%
  top: 100px
@@ -167,7 +169,6 @@
      transform: translateX(-50%) 
 	color: #fff
  z-index: 10
-
 .popup-close 
  position: absolute
  right: -20px
@@ -176,7 +177,6 @@
  color: #23bac1
  font-weight: 300
  cursor: pointer
-
 .overlay .popup-title 
  display: block
  width: 100%
@@ -189,27 +189,23 @@
  text-align: center
  font-weight: 500
  line-height: 71px
-
 .overlay .popup-form 
  background: url("../img/main/main-bgc-1.jpg") center no-repeat
  background-size: cover
  padding: 35px 88px 50px 88px
-
 .overlay .popup-form-header 
   padding: 0;
   font-weight: 400
   line-height: 27px
   text-align: center
-
 .overlay .popup-form__label 
  display: block
  margin-top: 23px
  font-size: 20px
  font-weight: 300
  line-height: 30px
-
-.overlay .popup-form__input 
- width: 365px
+.popup-menu__input
+	width: 220px
  height: 56px
  border-radius: 4px
  border: none
@@ -218,16 +214,40 @@
  font-size: 14px
  font-weight: 300
  line-height: 42px
+ outline: none
+.popup-menu__comment
+ width: 220px
+ height: 56px
+ border-radius: 4px
+ border: none
+ margin-top: 17px
+ padding: 21px 18px
+ font-size: 14px
+ font-weight: 300
+ line-height: 42px
+ outline: none
+.overlay .popup-form__input 
+ width: 220px
+ height: 56px
+ border-radius: 4px
+ border: none
+ margin-top: 17px
+ padding: 21px 18px
+ font-size: 14px
+ font-weight: 300
+ line-height: 42px
+ outline: none
 .overlay .popup-form__btn 
- width: 180px
+ width: 220px
  height: 58px
- margin-left: 16px
+ border-radius: 4px
  font-size: 15px
  font-weight: 500
  line-height: 22px
  color: #fff
  background-color: #23bac1
-
+ text-transform: uppercase
+ outline: none
 .overlay .popup-form__note 
  margin: 9px
  text-align: center

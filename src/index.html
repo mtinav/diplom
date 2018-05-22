@@ -152,11 +152,13 @@
 				<form action="mailer/smart.php" method="POST" class="main-form">
 					<div class="popup-form-header">Закажите макетные материалы прямо сейчас<br>
 						<span class="popup-form-header__sub">на производство и поставку изделий</span>
-
-						<label for="phone" class="popup-form__label">Введите ваш номер телефона:</label>
+						
+						<input class="popup-menu__input" type="text" placeholder="Ваше имя" required>
+						<input class="popup-menu__comment" type="textarea" placeholder="Какие материалы вам требуются?" required>
+<!--<label for="phone" class="popup-form__label">Введите ваш номер телефона:</label> -->						
 						<input type="tel" id="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="popup-form__input" name="user_phone" required>
 						<button onclick="yaCounter48833324.reachGoal('topBtn'); return true;" class="button popup-form__btn" type="submit">
-							Оставить заявку!
+							Оставить заявку
 						</button>
 						<!-- <div class="popup-form__note">
 							*Минимальный заказ 500шт
@@ -548,7 +550,7 @@
 					<div class="ordering-sect-text">
 						<p>Позвонить/оставить запрос <br> на обратный звонок</p>
 					</div><!-- /.ordering-sect-text -->
-					<a href="#">Заполнть форму заказа</a> 
+					<a class="ordering-form" href="#">Заполнть форму заказа</a> 
 				</div>	<!-- /.ordering-sect -->
 
 				<div class="col-12 col-md-6 col-lg-3 ordering-sect">
@@ -848,13 +850,10 @@
         }, {
             searchControlProvider: 'yandex#search'
         }),
-
         // Создаём макет содержимого.
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
-   
-
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
             hintContent: 'Собственный значок метки',
             balloonContent: 'Это красивая метка'
@@ -878,6 +877,7 @@
 		});
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js">	</script>
+	
 	<script>
 	$(document).ready(function() {
 
@@ -908,5 +908,16 @@
 			$(".contacts-input_tel").mask("+7(999) 999-9999");
 		});
 	</script> 
+	<script>
+		$(document).ready(function(){
+
+			$('.header-text_col, .material-button, .tools-button, .modal-button, .ordering-form, .link_bottom h3, .footer-text_col').on("click", function(){
+				$('.overlay').show()
+			});
+			$('.popup-close').on("click", function(){
+				$('.overlay').hide();
+			});
+		});
+	</script>
 </body>
 </html>
