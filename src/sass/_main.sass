@@ -112,6 +112,7 @@
 		font-weight: 300
 		margin-bottom: 61px
 .form
+	font-family: "Proxima Nova"
 	&-menu
 		width: 360px
 		height: 475px		
@@ -120,12 +121,15 @@
 		color: #000000
 		text-align: center
 	 &__middle
-	 	margin-top: 15px
-  	color: #ffff
+	 	margin-top: 5px
+			color: #7c7c7c
+			font-family: "Proxima Nova"
+			font-weight: 300
 			font-size: 11px
 			& a
-				color: #fff
+				color: #7c7c7c
 				text-decoration: underline
+				padding-bottom: 5px
 		&__text
 			font-size: 18px
 			font-weight: 400
@@ -139,6 +143,7 @@
 			border: 1px solid #e8e8e8
 			text-align: center
 			outline: none
+			font-family: "Proxima Nova"
 		&__comment
 			padding-top: 18px
 			padding-bottom: 18px
@@ -156,24 +161,29 @@
 		color: #fff
 		max-width: 204px
 		width: 100%
-		margin-bottom: 15px
+		margin-bottom: 10px
 		text-transform: uppercase
 		font-size: 13px
 		border: none
+		font-family: "Proxima Nova"
 .col-12.col-xl-4 
  padding: 0
 
 //popup
-.overlay .popup 
- position: fixed
- left: 50%
- top: 100px
- width: 752px
- -webkit-transform: translateX(-50%)
- -ms-transform: translateX(-50%)
-     transform: translateX(-50%) 
-	color: #fff
- z-index: 10
+.overlay 
+	display: none
+	top: 64px
+	& .popup 
+	 position: fixed
+	 left: 50%
+	 top: 57px
+	 max-width: 752px
+	 width: 100%
+	 -webkit-transform: translateX(-50%)
+	 -ms-transform: translateX(-50%)
+	     transform: translateX(-50%) 
+		color: #fff
+	 z-index: 10
 .popup-close 
  position: absolute
  right: -20px

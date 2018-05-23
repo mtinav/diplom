@@ -1,0 +1,249 @@
+.main
+	color: #fff
+	padding-bottom: 44px
+	position: relative
+	background: url(../img/main/main-bgc-1.jpg) center no-repeat
+	background-size: cover
+	z-index: 0
+	&::before 
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+  background-color: rgba(0, 0, 0, 0.8)
+  z-index: -1
+
+.header	
+	font-family: "Myriad Pro"
+	padding-top: 21px	
+	padding-bottom: 19px
+	font-weight: 400		
+	font-size: 13px
+	display: flex
+	align-items: center		
+	&-contacts
+		display: flex
+		justify-content: flex-end
+	&-text
+		display: flex		
+		align-items: center
+	&-text_add 
+		margin-right: 198px
+	&-icon
+		position: absolute
+		left: 4%
+		top: 29%	
+		& span
+			display: block
+	&-text_mail 
+  max-width: 272px
+  width: 272px
+  text-decoration: underline
+		& img
+			position: absolute
+   left: 372px
+   top: 38%
+	&-text_col a
+		color: #00d1f9
+		text-decoration: underline
+		font-size: 13px
+		font-weight: 300
+	&-text_tel
+		font-size: 18px
+		font-weight: 400
+		text-align: right
+		& a
+			text-align: right
+
+.section-title 
+	text-align: center
+	font-size: 36px
+	font-weight: 400
+	margin-bottom: 107px
+	&::after
+		content: ''
+		display: block
+		height: 6px
+		background: url(../img/lain.png) center no-repeat
+		margin-top: 18px
+
+.wrapper-nav
+	border-top: 1px solid #424242
+ border-bottom: 1px solid #424242
+	max-width: 1140px
+	padding-top: 10px
+	padding-bottom: 10px
+	margin-bottom: 90px
+.nav-link
+	padding: 0 39px
+	font-size: 13px
+	text-transform: uppercase
+.nav-item
+	list-style-type: none
+.nav-menu
+	display: flex
+
+
+.menu
+	color: #fffafa
+	&_block
+		margin-right: 0
+	&-advant
+		margin-bottom: 38px
+		&__text
+			margin-bottom: 43px
+			margin-right: 63px
+			& img
+    vertical-align: middle
+    margin-right: 35px
+  &__descr
+  	display: inline-block
+   width: 75%
+   vertical-align: middle
+	&-title
+		color: #fffafa
+		font-size: 36px
+		font-weight: 400
+		margin-bottom: 48px
+	&-descr
+		font-size: 20px
+		font-weight: 300
+		margin-bottom: 61px
+.form
+	&-menu
+		width: 360px
+		height: 475px		
+		padding: 30px 39px
+		background-color: #fff
+		color: #000000
+		text-align: center
+	 &__middle
+	 	margin-top: 15px
+  	color: #ffff
+			font-size: 11px
+			& a
+				color: #fff
+				text-decoration: underline
+		&__text
+			font-size: 18px
+			font-weight: 400
+			margin-bottom: 27px
+		&__input
+			padding-top: 18px
+			padding-bottom: 18px
+			max-width: 260px
+   width: 100%
+			margin-bottom: 10px
+			border: 1px solid #e8e8e8
+			text-align: center
+			outline: none
+		&__comment
+			padding-top: 18px
+			padding-bottom: 18px
+			height: 90px
+			max-width: 315px
+   width: 260px
+   margin-bottom: 20px
+   border: 1px solid #e8e8e8
+   text-align: center
+   outline: none
+ &-button
+ 	box-shadow: 0 6px 18px rgba(28, 167, 173, 0.32)
+		background-color: #23bac1
+		padding: 18px 38px
+		color: #fff
+		max-width: 204px
+		width: 100%
+		margin-bottom: 15px
+		text-transform: uppercase
+		font-size: 13px
+		border: none
+.col-12.col-xl-4 
+ padding: 0
+
+//popup
+.overlay .popup 
+ position: fixed
+ left: 50%
+ top: 100px
+ width: 752px
+ -webkit-transform: translateX(-50%)
+ -ms-transform: translateX(-50%)
+     transform: translateX(-50%) 
+	color: #fff
+ z-index: 10
+.popup-close 
+ position: absolute
+ right: -20px
+ top: -30px;
+ font-size: 35px
+ color: #23bac1
+ font-weight: 300
+ cursor: pointer
+.overlay .popup-title 
+ display: block
+ width: 100%
+ min-height: 71px
+ margin: 0
+ background-color: #23bac1
+ color: #fff
+ text-transform: uppercase
+ font-size: 19px
+ text-align: center
+ font-weight: 500
+ line-height: 71px
+.overlay .popup-form 
+ background: url("../img/main/main-bgc-1.jpg") center no-repeat
+ background-size: cover
+ padding: 35px 88px 50px 88px
+.overlay .popup-form-header 
+ padding: 0;
+ font-weight: 400
+ text-align: center
+ font-size: 24px
+.overlay .popup-form__label 
+ display: block
+ margin-top: 23px
+ font-size: 20px
+ font-weight: 300
+ line-height: 30px
+
+.popup-menu
+	&__input, &__comment
+		width: 257px
+ 	height: 56px 
+ 	border-radius: 4px
+ 	border: none
+	 margin-top: 17px
+	 padding: 21px 18px
+	 font-size: 14px
+	 margin-bottom: 15px
+		text-align: center
+.popup-form
+	&__input, &__btn 
+	 width: 257px
+	 height: 56px
+	 border-radius: 4px
+	 border: none
+ 	font-size: 15px
+ 	text-align: center
+ &__input
+ 	padding: 21px 18px
+.overlay .popup-form__btn 
+ color: #fff
+ background-color: #23bac1
+ text-transform: uppercase
+.overlay .popup-form__note 
+ margin: 9px
+ text-align: center
+ font-size: 14px
+ font-weight: 300
+ line-height: 30px
+
+
+
+
+
+
