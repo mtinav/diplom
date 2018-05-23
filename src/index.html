@@ -126,11 +126,11 @@
 								<div class="form-menu__text">
 									Закажите макетные материалы прямо сейчас
 								</div>
-								<input class="form-menu__input" type="text" placeholder="Ваше имя" required>
+								<input class="form-menu__input" name="user_name" type="text" placeholder="Ваше имя" required>
 
-								<input class="form-menu__input form-menu_tel" type="tel" name="user_phone" id="phone2" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
-								
-								<input class="form-menu__comment" type="text" placeholder="Какие материалы вам требуются?" required>
+								<input class="form-menu__input form-menu_tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="user_phone" required>
+
+								<input class="form-menu__comment" name="user_text" type="text" placeholder="Какие материалы вам требуются?" required>
 								<button class="form-button" type="submit" >Оставить заявку</button>
 								<p class="form-menu__middle">Нажимая на кнопку оставить заявку<br>вы соглашаетесь с <a href="obrabotka.html">политикой обработки данных</a>
 								</p>
@@ -718,7 +718,7 @@
 		  cssEase: 'linear',
 		  responsive: [
 					{
-						breakpoint: 900,
+						breakpoint: 990,
 						settings: {
 							dots: false
 						}
@@ -728,22 +728,39 @@
   });
 
   $(document).ready(function(){
-  $('.tools-slider__item').slick({
-  dots: true,
-  infinite: false,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
+	  $('.tools-slider__item').slick({
+		  dots: true,
+		  infinite: false,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear',
+		  responsive: [
+					{
+						breakpoint: 990,
+						settings: {
+							dots: false
+						}
+					}
+				]
+	  });
   });
-  });
+
   $(document).ready(function(){
-  $('.model-slider__item').slick({
-  dots: true,
-  infinite: false,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
-  });
+	  $('.model-slider__item').slick({
+		  dots: true,
+		  infinite: false,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear',
+		  responsive: [
+					{
+						breakpoint: 990,
+						settings: {
+							dots: false
+						}
+					}
+				]
+	  });
   });
  </script>
 	<script>
@@ -771,7 +788,14 @@
 				}
 			},
 			{
-				breakpoint: 811,
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 662,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
@@ -795,6 +819,13 @@
 			{
 				breakpoint: 992,
 				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 662,
+				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
 				}
@@ -816,6 +847,13 @@
 			},
 			{
 				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 662,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
