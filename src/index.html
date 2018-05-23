@@ -427,7 +427,7 @@
 							<img class="product-slider-img" src="img/model/model-1.png" alt="Инструменты ">
 						</div>						
 						<div class="model-block">
-							<img class="product-slider-img" src="img/model/ludn—копия.jpg" alt="Инструменты ">
+							<img class="product-slider-img" src="img/model/ludn—копия.jpg" alt="Инструменты">
 						</div>						
 						<div class="model-block">
 							<img class="product-slider-img" src="img/model/ludn.jpg" alt="Инструменты">
@@ -795,7 +795,7 @@
 				}
 			},
 			{
-				breakpoint: 720,
+				breakpoint: 760,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
@@ -824,7 +824,7 @@
 				}
 			},
 			{
-				breakpoint: 720,
+				breakpoint: 760,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
@@ -853,7 +853,7 @@
 				}
 			},
 			{
-				breakpoint: 720,
+				breakpoint: 760,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
@@ -873,65 +873,60 @@
 			});
 		});
 	</script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU">
-	</script>
-<!--  <script src="mapbasics.js" type="text/javascript">
-</script> -->
-	<script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+ <script>
 		ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [55.756406, 37.714492],
-            zoom: 17
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/icons.png',
-            // Размеры метки.
-            iconImageSize: [30, 42],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
-        })
-        myMap.behaviors.disable([
-	    'scrollZoom'
-	    ]);
-    myMap.geoObjects
-        .add(myPlacemark)
+   var myMap = new ymaps.Map('map', {
+           center: [55.756406, 37.714492],
+           zoom: 17
+       }, {
+           searchControlProvider: 'yandex#search'
+       }),
+       // Создаём макет содержимого.
+       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+           '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+       ),
+       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+           hintContent: 'Собственный значок метки',
+           balloonContent: 'Это красивая метка'
+       }, {
+           // Опции.
+           // Необходимо указать данный тип макета.
+           iconLayout: 'default#image',
+           // Своё изображение иконки метки.
+           iconImageHref: 'img/icons.png',
+           // Размеры метки.
+           iconImageSize: [30, 42],
+           // Смещение левого верхнего угла иконки относительно
+           // её "ножки" (точки привязки).
+           iconImageOffset: [-5, -38]
+       })
+       myMap.behaviors.disable([
+    'scrollZoom'
+    ]);
+   myMap.geoObjects
+       .add(myPlacemark)
 		});
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js">	</script>
-
 	<script>
 	$(document).ready(function() {
-
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-	url: "mail/mail.php", //Change
-	data: th.serialize()
-	}).done(function() {
-		alert("Данные отправились!");
-		setTimeout(function() {
-	// Done Functions
-	th.trigger("reset");
-	}, 1000);
-	});
-	return false;
-	});
+		//E-mail Ajax Send
+		$("form").submit(function() { //Change
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+			url: "mail/mail.php", //Change
+			data: th.serialize()
+			}).done(function() {
+				alert("Данные отправились!");
+				setTimeout(function() {
+			// Done Functions
+			th.trigger("reset");
+			}, 1000);
+			});
+			return false;
+		});
 
 	});
 	</script>
