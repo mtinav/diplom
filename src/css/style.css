@@ -541,7 +541,8 @@
   .ordering-sect_img {
     margin-bottom: 34px; }
   .ordering-sect-text {
-    margin-bottom: 26px; }
+    margin-bottom: 26px;
+    font-size: 16px; }
 
 .shipping {
   padding-top: 94px;
@@ -695,7 +696,7 @@
       font-size: 12px;
       padding: 15px 50px; }
     .material-lego {
-      right: -37px;
+      right: 1px;
       top: -118px; }
       .material-lego img {
         width: 189px; }
