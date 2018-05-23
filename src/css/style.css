@@ -127,11 +127,11 @@
   color: #000000;
   text-align: center; }
   .form-menu__middle {
-    color: #7c7c7c;
-    font-size: 11px;
-    font-weight: 300; }
+    margin-top: 15px;
+    color: #ffff;
+    font-size: 11px; }
     .form-menu__middle a {
-      color: #7c7c7c;
+      color: #fff;
       text-decoration: underline; }
   .form-menu__text {
     font-size: 18px;
@@ -290,7 +290,7 @@
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 19px 52px;
+    padding: 19px 48px;
     cursor: pointer; }
     .material-button img {
       display: inline-block;
@@ -326,6 +326,11 @@
 
 .slick-slide.slick-active {
   outline: none; }
+
+img.product-slider-img:active,
+img.product-slider-img:focus {
+  outline: none;
+  box-shadow: none; }
 
 @font-face {
   font-family: 'Myriad Pro';

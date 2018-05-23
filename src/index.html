@@ -127,7 +127,9 @@
 									Закажите макетные материалы прямо сейчас
 								</div>
 								<input class="form-menu__input" type="text" placeholder="Ваше имя" required>
+
 								<input class="form-menu__input form-menu_tel" type="tel" name="user_phone" id="phone2" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
+								
 								<input class="form-menu__comment" type="text" placeholder="Какие материалы вам требуются?" required>
 								<button class="form-button" type="submit" >Оставить заявку</button>
 								<p class="form-menu__middle">Нажимая на кнопку оставить заявку<br>вы соглашаетесь с <a href="obrabotka.html">политикой обработки данных</a>
@@ -146,16 +148,16 @@
 			<div class="popup-close"> &times;</div>
 				<!-- /.popup-close -->
 			<div class="popup-form">
-				<form action="mailer/smart.php" method="POST" class="main-form">
+				<form action="mail/mail.php" method="POST" class="main-form">
 					<div class="popup-form-header">Закажите макетные материалы прямо сейчас<span class="popup-form_sub">на производство и поставку изделий</span>
 						
-						<input class="popup-menu__input pop_input" id="name" name="user_name" type="text" placeholder="Ваше имя" required>
+						<input class="popup-menu__input pop_input" id="user_name" name="user_name" type="text" placeholder="Ваше имя" required>
 
-						<input class="popup-menu__comment pop_input" id="text" name="user_text" type="text" placeholder="Какие материалы вам требуются?" required>
+						<input class="popup-menu__comment pop_input" id="user_text" name="user_text" type="text" placeholder="Какие материалы вам требуются?" required>
 
-						<input type="tel" id="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="popup-form__input pop_input" name="user_phone" required>
+						<input class="popup-form__input pop_input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" id="user_phone" name="user_phone" required>
 
-						<button onclick="yaCounter48833324.reachGoal('topBtn'); return true;" class="button popup-form__btn" type="submit">
+						<button class="button popup-form__btn" type="submit">
 							Оставить заявку
 						</button>
 						<p class="form-menu__middle">Нажимая на кнопку оставить заявку<br>вы соглашаетесь с <a href="obrabotka.html">политикой обработки данных</a>
@@ -428,7 +430,7 @@
 							<img src="img/model/ludn—копия.jpg" alt="Инструменты ">
 						</div>						
 						<div class="model-block">
-							<img src="img/model/ludn.jpg" alt="Инструменты ">
+							<img src="img/model/ludn.jpg" alt="Инструменты">
 						</div>	
 					</div>
 						<div class="model-block_text">
@@ -513,7 +515,6 @@
 						</div>
 						<button class="model-button"><img src="img/korzina.png" alt="Инструменты">купить</button>	
 				</div><!-- слфйдер-4	-->
-
 				</div>	<!-- /.model-slider -->
 			</div>	<!-- /.model-slider__wrap -->
 		</div>		<!-- /.container -->
@@ -526,10 +527,13 @@
 			<!-- /.section-title -->
 			<div class="contacts-text">Оставьте заявку и мы подберем Вам необходимые для Вас материалы</div>
 			<!-- /.contacts-text -->
-			<form action="#" class="form-cont">
-				<input class="contacts-input contacts-input_name" id="name1" name="user_name" type="text" placeholder="Ваше имя" required>
-				<input class="contacts-input contacts-input_tel" id="phone1"	name="user_phone"	type="text" placeholder="Контактный телефон" required>
+			<form action="mail/mail.php" method="POST" class="form-cont">
+				<input class="contacts-input contacts-input_name" name="user_name" type="text" placeholder="Ваше имя" required>
+
+				<input class="contacts-input contacts-input_tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="user_phone" required>
+
 				<input class="contacts-input contacts-input_comment" id="text1" name="user_text" type="text" placeholder="Какие материалы вам требуется?" required>
+
 				<button class="contacts-button" type="submit">
 					Оставить заявку
 				</button>
@@ -706,13 +710,21 @@
 	</script>
 	<script>
   $(document).ready(function(){
-  $('.material-slider__item').slick({
-  dots: true,
-  infinite: false,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
-  });
+	  $('.material-slider__item').slick({
+		  dots: true,
+		  infinite: false,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear',
+		  responsive: [
+					{
+						breakpoint: 900,
+						settings: {
+							dots: false
+						}
+					}
+				]
+	  });
   });
 
   $(document).ready(function(){
@@ -749,7 +761,7 @@
 			slidesToScroll: 1,
 			prevArrow: '<div class="slider-mat slider-arrow_material slider-mat_left"></div>',
 			nextArrow: '<div class="slider-mat slider-arrow_material slider-mat_right"></div>',
-    centerMode: true,
+    //centerMode: true,
 			responsive: [
 			{
 				breakpoint: 1200,
@@ -759,7 +771,7 @@
 				}
 			},
 			{
-				breakpoint: 992,
+				breakpoint: 811,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1

@@ -32,14 +32,14 @@ $mail->Subject = 'Это тема сообщения';
 $mail->Body    = '
 	Пользователь оставил свои данные <br> 
 	Имя: ' . $name . ' <br>
-	Телефон: ' . $phone . ' <br>
+	Телефон: ' . $phone . '<br>
 	Текст: ' . $text . '';
 $mail->AltBody = 'Это альтернативный текст';
 
 if(!$mail->send()) {
     echo "Error"
 } else {
-    echo "Seccesss"
+    echo "Seccesss"forma.html
 }
 
 ?>

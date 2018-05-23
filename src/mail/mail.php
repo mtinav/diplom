@@ -15,15 +15,23 @@ if ( $_SERVER['REQUEST_METHOD'] !== 'POST' ) {
 $project_name = 'Добрый картон';
 $admin_email = 'valentinamaa@ya.ru';
 
-$phone = trim($_POST["user_phone"]);
+$name = $_POST['user_name'];
+$text = $_POST['user_text'];
+$phone = trim($_POST['user_phone']);
 
-$body = "Заявка на обратный звонок на номер: ".$phone;
+$body = file_get_contents('./mail-template.html');
+$body = str_replace('{{name}}', $name, $body);
+$body = str_replace('{{comment}}', $text, $body);
+$body = str_replace('{{phone}}', $phone, $body);
 
 function adopt($text) {
 	return '=?UTF-8?B?'.Base64_encode($text).'?=';
 }
 
-mail($admin_email, adopt($project_name), $body);
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+mail($admin_email, adopt($project_name), $body, $headers);
 
 /**
  * change
