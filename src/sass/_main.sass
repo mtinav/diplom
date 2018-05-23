@@ -30,7 +30,7 @@
 		display: flex		
 		align-items: center
 	&-text_add 
-		margin-right: 201px
+		margin-right: 198px
 	&-icon
 		position: absolute
 		left: 4%
@@ -76,10 +76,15 @@
 	padding-top: 10px
 	padding-bottom: 10px
 	margin-bottom: 90px
-	list-style-type: none
 .nav-link
-	padding: 0 30px
+	padding: 0 39px
+	font-size: 13px
 	text-transform: uppercase
+.nav-item
+	list-style-type: none
+.nav-menu
+	display: flex
+
 
 .menu
 	color: #fffafa
@@ -204,40 +209,32 @@
  font-size: 20px
  font-weight: 300
  line-height: 30px
-.popup-menu__input
-	width: 220px
- height: 56px
- border-radius: 4px
- border: none
- margin-top: 17px
- padding: 21px 18px
- font-size: 14px
-.popup-menu__comment
- width: 220px
- height: 56px
- border-radius: 4px
- border: none
- margin-top: 17px
- padding: 21px 18px
- font-size: 14px
-.overlay .popup-form__input 
- width: 220px
- height: 56px
- border-radius: 4px
- border: none
- margin-top: 17px
- padding: 21px 18px
- font-size: 14px
+
+.popup-menu
+	&__input, &__comment
+		width: 257px
+ 	height: 56px 
+ 	border-radius: 4px
+ 	border: none
+	 margin-top: 17px
+	 padding: 21px 18px
+	 font-size: 14px
+	 margin-bottom: 15px
+		text-align: center
+.popup-form
+	&__input, &__btn 
+	 width: 257px
+	 height: 56px
+	 border-radius: 4px
+	 border: none
+ 	font-size: 15px
+ 	text-align: center
+ &__input
+ 	padding: 21px 18px
 .overlay .popup-form__btn 
- width: 220px
- height: 58px
- border-radius: 4px
- font-size: 15px
  color: #fff
  background-color: #23bac1
  text-transform: uppercase
- outline: none
- border: none
 .overlay .popup-form__note 
  margin: 9px
  text-align: center

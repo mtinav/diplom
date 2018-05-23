@@ -45,17 +45,20 @@
 								<p class="header-text_col"><a href="#">Заказать макетные запчасти</a>
 								</p>
 						</div>	<!-- /.header-text_descr -->
-						<a href="#menu-link" class="menu-link ">
-						<span></span>
-					</a>
+						
 					</div>
 			 	
 				</div>	<!-- /.row -->
 				<!-- /.header -->
 			<section clss="wrapper">
-				<div class="wrapper-nav">
-					
-					<div class="row nav-menu">
+				<a href="#menu-link" class="menu-link ">
+						<span ></span>
+					</a>
+			<div class="wrapper-nav">	
+				<div class="wrapper-close">
+					&times;
+				</div>		
+					<ul class="nav-menu">
 	     <li class="nav-item">
        <a class="nav-link" href="#material">Материалы </a>
       </li>
@@ -77,7 +80,7 @@
       <li class="nav-item">
 	      <a class="nav-link" href="#link">Контакты</a>
 		    </li>
-				 </div>
+				 </ul>
 				</div><!-- /.wrapper -->
 			</section>
 				<!-- /.wrapper-nav -->
@@ -150,11 +153,14 @@
 				<!-- /.popup-close -->
 			<div class="popup-form">
 				<form action="mailer/smart.php" method="POST" class="main-form">
-					<div class="popup-form-header">Закажите макетные материалы прямо сейчас<span class="popup-form-header__sub">на производство и поставку изделий</span>
+					<div class="popup-form-header">Закажите макетные материалы прямо сейчас<span class="popup-form_sub">на производство и поставку изделий</span>
 						
-						<input class="popup-menu__input" id="name" name="user_name" type="text" placeholder="Ваше имя" required>
-						<input class="popup-menu__comment" id="text" name="user_text" type="textarea" placeholder="Какие материалы вам требуются?" required>
-						<input type="tel" id="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="popup-form__input" name="user_phone" required>
+						<input class="popup-menu__input pop_input" id="name" name="user_name" type="text" placeholder="Ваше имя" required>
+
+						<input class="popup-menu__comment pop_input" id="text" name="user_text" type="textarea" placeholder="Какие материалы вам требуются?" required>
+
+						<input type="tel" id="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="popup-form__input pop_input" name="user_phone" required>
+
 						<button onclick="yaCounter48833324.reachGoal('topBtn'); return true;" class="button popup-form__btn" type="submit">
 							Оставить заявку
 						</button>
@@ -179,13 +185,13 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="material-slider__item">
 						<div class="material-block ">
-							<img src="img/material/material-1.png" alt="материалы">
+							<img class="product-slider-img" src="img/material/material-1.png" alt="материалы">
 						</div>					
 						<div class="material-block">
 							<img src="img/material/Без названия.jpg" alt="">
 						</div>						
 						<div class="material-block">
-							<img src="img/material/images.jpg" alt="">
+							<img class="product-slider-img" src="img/material/images.jpg" alt="">
 							</div>				
 						</div>
 						<div class="material-sect-text">
@@ -200,13 +206,13 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="material-slider__item">
 						<div class="material-block ">
-							<img src="img/material/material-2.png" alt="материалы">
+							<img class="product-slider-img" src="img/material/material-2.png" alt="материалы">
 						</div>					
 						<div class="material-block">
-							<img src="img/material/Без названия.jpg" alt="">
+							<img class="product-slider-img" src="img/material/Без названия.jpg" alt="">
 						</div>						
 						<div class="material-block">
-							<img src="img/material/images.jpg" alt="">
+							<img class="product-slider-img" src="img/material/images.jpg" alt="">
 							</div>				
 						</div>
 						<div class="material-sect-text">
@@ -221,13 +227,13 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="material-slider__item">
 						<div class="material-block ">
-							<img src="img/material/material-3.png" alt="материалы">
+							<img class="product-slider-img" src="img/material/material-3.png" alt="материалы">
 						</div>					
 						<div class="material-block">
-							<img src="img/material/Без названия.jpg" alt="">
+							<img class="product-slider-img" src="img/material/Без названия.jpg" alt="">
 						</div>						
 						<div class="material-block">
-							<img src="img/material/images.jpg" alt="">
+							<img class="product-slider-img"  src="img/material/images.jpg" alt="">
 							</div>				
 						</div>
 						<div class="material-sect-text">
@@ -242,13 +248,13 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="material-slider__item">
 						<div class="material-block ">
-							<img src="img/material/material-4.png" alt="материалы">
+							<img class="product-slider-img" src="img/material/material-4.png" alt="материалы">
 						</div>					
 						<div class="material-block">
-							<img src="img/material/Без названия.jpg" alt="">
+							<img class="product-slider-img" src="img/material/Без названия.jpg" alt="">
 						</div>						
 						<div class="material-block">
-							<img src="img/material/images.jpg" alt="">
+							<img class="product-slider-img" src="img/material/images.jpg" alt="">
 							</div>				
 						</div>
 						<div class="material-sect-text">
@@ -263,13 +269,13 @@
 				<div class="col-12 col-md-6 col-lg-3">
 					<div class="material-slider__item">
 						<div class="material-block ">
-							<img src="img/material/material-2.png" alt="материалы">
+							<img class="product-slider-img" src="img/material/material-2.png" alt="материалы">
 						</div>					
 						<div class="material-block">
-							<img src="img/material/Без названия.jpg" alt="">
+							<img class="product-slider-img" src="img/material/Без названия.jpg" alt="">
 						</div>						
 						<div class="material-block">
-							<img src="img/material/images.jpg" alt="">
+							<img class="product-slider-img" src="img/material/images.jpg" alt="">
 							</div>				
 						</div>
 						<div class="material-sect-text">
@@ -594,7 +600,7 @@
 						<img src="img/order/shipping-1.png" alt="Инструменты">
 					</div><!-- /.shipping-sect_img -->
 					<div class="shipping-sect-text">
-						Доставка в пределах МКАД от 3000 руб. <span>бесплатно</span>
+						Доставка в пределах МКАД<br>от 3000 руб. <span>бесплатно</span>
 					</div><!-- /.shipping-sect-text -->
 				</div>	<!-- /.shipping-sect -->
 
@@ -694,7 +700,6 @@
 	</section>
 	<!-- /.footer -->
 
-
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
 	</script>
 	<script>
@@ -727,6 +732,14 @@
   });
   });
  </script>
+	<script>
+		$('.menu-link').click(function() {
+				$('.wrapper-nav').toggleClass('wrapper-nav_active');
+		});
+		$('.wrapper-close').click(function() {
+			$('.wrapper-nav').toggleClass('wrapper-nav_active');
+		});
+	</script>
 	<script src="slick/slick.js"></script>
 	<script>
 		$('.material-slider').slick({
@@ -734,19 +747,12 @@
 			slidesToScroll: 1,
 			prevArrow: '<div class="slider-mat slider-arrow_material slider-mat_left"></div>',
 			nextArrow: '<div class="slider-mat slider-arrow_material slider-mat_right"></div>',
+    centerMode: true,
 			responsive: [
 			{
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 1024,
-				settings: {
-					
-					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 			},
@@ -773,14 +779,6 @@
 				}
 			},
 			{
-				breakpoint: 1024,
-				settings: {
-					
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
-			},
-			{
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 1,
@@ -799,14 +797,6 @@
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 3,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 1024,
-				settings: {
-					
-					slidesToShow: 2,
 					slidesToScroll: 1
 				}
 			},
@@ -902,7 +892,6 @@
 		});
 	</script> 
 	<script>
-
 		$(document).ready(function(){
 			$('.header-text_col, .material-button, .tools-button, .modal-button, .ordering-form, .link_bottom h3, .footer-text_col').on("click", function(){
 				$('.overlay').show()

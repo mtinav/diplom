@@ -1,15 +1,19 @@
+@media screen and (min-width: 995px)
+	.wrapper-close
+		display: none
 @media screen and (max-width: 1199px)
 	.header	
 		&-text
 			display: flex		
 			align-items: center
 		&-text_add 
-			width: 217px
+			width: 139px
+			margin-right: 171px
 		&-icon
 			left: 1%
 			top: 26%	
 		&-text_mail 
-	  width: 193px
+	  width: 191px
 			& img
 	   left: 315px
     top: 38%
@@ -18,11 +22,9 @@
 				text-align: right
 
 	.nav-link 
-	 padding: 0 28px
+	 padding: 0 26px
 	 font-size: 13px
 	.menu
-		&-block
-			text-align: centers
 		&-title 
 	 	font-size: 28px	
 	 	color: #fffafa
@@ -93,7 +95,7 @@
  .slider-model_left 
   left: -50px
 // media 1199
-
+ 
 
 @media screen and (max-width: 992px)
 	.header
@@ -102,8 +104,7 @@
 		&-text
 			display: flex
 			&_add
-			 margin-right: 63px
-    margin-bottom: 7px
+			 margin-right: 12px
     padding-top: 5px
 			&_col
 	  	font-size: 11px 	
@@ -111,7 +112,6 @@
 	  	font-size: 16px
 	  	text-align: right
 	  &_mail
-	  	padding-left: 52px
 	  	& img
 	  		display: none
 	img.header-icon 
@@ -119,14 +119,11 @@
 	.wrapper-nav 
   margin-bottom: 33px
  .nav-link 
-  padding: 0px 6px
-  font-size: 15px
-
+  padding: 0px 11px
+		
  .menu
- 	&-block
- 		text-align: centers
  	&-title 
-  	font-size: 24px	
+  	font-size: 26px	
   	text-align: center
   &-descr
   	font-size: 17px
@@ -151,7 +148,7 @@
 				padding-top: 13px
 	   padding-bottom: 13px
 	 &-button
-	 	padding: 14px 42px
+	 	padding: 14px 39px
 	.popup-form-header 
   font-size: 20px
  .popup-close     
@@ -159,7 +156,6 @@
   top: -34px
  .popup-form__label label
    font-size: 15px
-	
 
 	.section-title
 		font-size: 25px
@@ -167,30 +163,32 @@
 		&::after
 			display: none
 
-	.menu-link.menu-link_active
-		display: none
+
 	.material-lego
 		display: none
 	.tools-lego
 		display: none
 	.model-lego
 		display: none
+
 	.wrapper-nav
 		margin-bottom: 37px
 
 	.material
-		padding-top: 25px
+		padding-top: 30px
 		padding-bottom: 35px
 		&-block
 			height: 155px
 
 	.tools
-		padding-top: 25px
+		padding-top: 30px
 		padding-bottom: 35px
 
 	.model
-		padding-top: 25px
-		padding-bottom: 0
+		padding-top: 30px
+		padding-bottom: 15px
+		&-button
+			margin-top: 0
 		
 	.slider-mat, .slider-tools, .slider-model
 		&_right 
@@ -288,6 +286,8 @@
 		margin-bottom: 15px
 		&-text_add, &-text_mail
 			display: none
+	.header-text_tel 
+  margin-top: 29px
 
 	.form
 		&-button
@@ -318,7 +318,7 @@
 	  border-radius: 45%
 	  position: fixed
 	  top: 17px
-	  right: 67px
+	  right: 138px
 			span, span:before, span:after 
 		  display: block
 		  height: 2px
@@ -352,40 +352,29 @@
 			  margin-top: 0
 			  background-color: #fff
 
- .popup 
-  width: 440px
+ .overlay .popup
+  width: 70%
  	&-form 
   	padding: 35px 32px 50px 32px 
- 	&__input 
-   text-align: center
-   margin: auto
-   margin-bottom: 12px
-   width: 79%;
+ 		&__input 
+  	 margin-bottom: 0
+ .overlay .popup-form-header 
+  font-size: 18px
 
-	.nav-menu 
-		background-color: purple
-		position: fixed	
-		width: 100vw	
-		height: 100vh	
-		z-index: 10	
-		justify-content:	center
-		align-items: center
-		display: flex
-	 right: -100vw 		
-  & li
-	  padding: 0
-	  list-style: none
-	  text-align: center	
-	  & a
-	  	color: #fff  
-	  	line-height: 4
-	  	letter-spacing: 	5px
-	  	font-weight: 100	
-			 &:hover 
-			 	display: block	
-			 	width: 100vw
-				 text-decoration: none
-					background-color: #fff
+	.popup-form__btn
+		margin-top: 15px
+		width: 73%
+	.popup-form__input 
+		width: 73%
+  //margin-top: 15px
+ .popup-menu__comment
+		margin-top: 7px
+		width: 73%
+	.popup-menu__input
+		margin-bottom: 10px
+		width: 73%
+	.pop-tel
+		margin-top: 15px
 
 	//.slick-slide img 
  // margin-left: calc(50vw - 0.5 * 706px)
@@ -450,12 +439,48 @@
    width: 217px
   &-text_add 
    margin-right: 0
-
-	
 	.footer-icon
 		display: none
-	.wrapper-nav
-		display: none
+
+	.menu-link
+		right: 51px
+	
+	.wrapper-close
+		position: absolute
+		top: 9px
+		right: 3rem
+		font-size: 40px
+		&:hover
+			cursor: pointer
+
+	.wrapper-nav	
+		transform: translateX(100%)
+		position: fixed
+		left: 0
+		top: 0
+		height: 350px	
+		background-color: #2d7372
+		width: 100%
+		text-align: center
+		display: flex
+		justify-content: center
+		align-items: center
+		&_active
+			transform: translateX(0%)
+			z-index: 10000
+
+	.nav-menu
+		height: 80%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-around
+		list-style-type: none
+		&-link
+			display: block
+			color: #ffff
+			font-size: 2rem
+			text-transform: uppercase
 
 @media screen and (max-width: 576px)
 	.header-text_tel 
@@ -468,18 +493,21 @@
 
  .main
  	padding-bottom: 0
+
+	.overlay .popup-form
+			padding: 26px 4px 35px 4px
  .popup 
-  width: 440px
-	 &-form 
-   padding: 27px 32px 23px 31px
- 		&__input 
-   	text-align: center
-  	 margin-bottom: 12px
-  	 width: 303px
- 	&-header 
-   font-size: 20px
- 		& span 
-   	font-size: 15px
+  width: 77%
+		&__input 
+  	text-align: center
+		&-header 
+ 	 font-size: 18px
+ 	 padding-top: 15px
+	 &-close 
+  	top: -31px
+	.overlay .popup-title
+ 	 font-size: 17px
+  
 
  .slick-slide img 
  	margin-left: calc(50vw - 0.5 * 350px)
@@ -492,16 +520,13 @@
 	.slider-mat_right, .slider-tools_right, .slider-model_right 
   right: -13px 
 
- .popup-close 
-  right: 63px
-  top: -8px
- .popup-title 
-  font-size: 17px
  .footer-text
  	&_mail 
   	width: 176px
  	&_tel 
    font-size: 13px
+
+
 
 @media screen and (max-width: 375px)
  .form-menu
@@ -534,6 +559,12 @@
 				padding-left: 7px
 	.menu-advant-block
 		margin-left: 0
+
+	.popup 
+  left: 45%
+  width: 85px
+  &-title
+  	font-size: 18px
 
 	.slider-mat_right, .slider-tools_right, .slider-model_right 
   right: -26px
